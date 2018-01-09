@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sistema Finanças</title>
+        <script src='financas.js'></script>
+        <link rel='stylesheet' type='text/css' href='financas.css'>
+    </head>
+    <body>
+        
+        <div class='titleBoard'>
+            <h1>Cadastro de Tipo de Lançamento</h1>
+        </div>
+
+        <div class='subtitleBoard'>
+            <h2>Cadastro de Tarefa</h2>
+        </div>
+        
+        <form name='formularioCadastroTarefa' method=POST action='www.softblue.com.br/javaCriar'>
+            Digite a tarefa a ser criada:
+            <br>
+            <input class='field' type='text' maxlength='80' name='descricaoTarefa' placeholder='Digite aqui...'>
+
+            <br>
+            <input class='button' type='button' value='Criar tarefa' onClick='criacaoDeTarefa_validar();'>
+            <input class='button' type='button' value='Cancelar' onClick='criacaoDeTarefa_cancelar();'>
+            
+            <!-- <input type='submit' value='Enviar'> -->
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sistema Finanças</title>
+        <script src='financas.js'></script>
+        <link rel='stylesheet' type='text/css' href='financas.css'>
+    </head>
+    <body>
+        
+        <div class='titleBoard'>
+            <h1 class='tituloPagina'>BlueTasks</h1>
+        </div>
+
+        <div class='subtitleBoard'>
+            <h2>Lista de Tarefas</h2>
+        </div>
+        
+        <table>
+            <tr>
+                <th class='coluna1'>Tarefas</th>
+                <th class='coluna2' colspan=2>Ações</th>
+            </tr>
+            <tr class='rowPendent'>
+                <td>Fazer mercado</td>
+                <td>
+                    <a href="">
+                        <img src="iconeConcluir.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="">
+                        <img src="iconeExcluir.png">
+                    </a>
+                </td>
+            </tr>
+            <tr class='rowPendent'>
+                <td>Lavar roupa</td>
+                <td>
+                    <a href="">
+                        <img src="iconeConcluir.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="">
+                        <img src="iconeExcluir.png">
+                    </a>
+                </td>
+            </tr>
+            <tr class='rowPendent'>
+                <td>Apresentar webinar</td>
+                <td>
+                    <a href="">
+                        <img src="iconeConcluir.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="">
+                        <img src="iconeExcluir.png">
+                    </a>
+                </td>
+            </tr>
+            <tr class='rowDone'>
+                <td>Apresentar formulário</td>
+                <td>
+                    <a href="">
+                        <img src="iconeConcluir.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="">
+                        <img src="iconeExcluir.png">
+                    </a>
+                </td>
+            </tr>
+            <tr class='rowDone'>
+                <td>Contar mais uma piada</td>
+                <td>
+                    <a href="">
+                        <img src="iconeConcluir.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="">
+                        <img src="iconeExcluir.png">
+                    </a>
+                </td>
+            </tr>
+        </table>
+        
+        <br>
+        <!-- <a href='BlueTasks-CadastroDeTarefa.html'>Cadastrar nova tarefa</a> -->
+        
+        <input class='button' type='button' value='Cadastrar nova tarefa' onClick="criacaoDeTarefa_acessar();">
+        <input class='button' type='button' value='Excluir tarefas concluídas'>
+        
+</html>
