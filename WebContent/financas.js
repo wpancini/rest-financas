@@ -1,6 +1,6 @@
 function criacaoDeTarefa_acessar()
 {
-    location.href = "BlueTasks-CadastroDeTarefa.html";
+    location.href = "cadastrotipolancamento.html";
 }
 
 function criacaoDeTarefa_excluirConcluidas()

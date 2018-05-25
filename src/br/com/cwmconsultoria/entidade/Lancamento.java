@@ -1,6 +1,5 @@
 package br.com.cwmconsultoria.entidade;
 
-import java.sql.Date;
 
 public class Lancamento {
 
@@ -9,12 +8,26 @@ public class Lancamento {
 	private int idmotivolancto;
 	private String desctipolancto;
 	private String descmotivolancto;
-	private Date datalancto;
-	private Date dataevento;
+	private String datalancto;
+	private String dataevento;
 	private Double valorcredito;
 	private Double valordebito;
 	private String comentario;
-	
+	private int idlanctoparcelapai;
+	private int parcela;
+
+	public String getDatalancto() {
+		return datalancto;
+	}
+	public void setDatalancto(String datalancto) {
+		this.datalancto = datalancto;
+	}
+	public String getDataevento() {
+		return dataevento;
+	}
+	public void setDataevento(String dataevento) {
+		this.dataevento = dataevento;
+	}	
 	public int getId() {
 		return id;
 	}
@@ -27,23 +40,11 @@ public class Lancamento {
 	public void setIdtipoLacto(int idtipoLacto) {
 		this.idtipoLacto = idtipoLacto;
 	}
-	public Date getDataevento() {
-		return dataevento;
-	}
-	public void setDataevento(Date dataevento) {
-		this.dataevento = dataevento;
-	}
 	public int getIdmotivolancto() {
 		return idmotivolancto;
 	}
 	public void setIdmotivolancto(int idmotivolancto) {
 		this.idmotivolancto = idmotivolancto;
-	}
-	public Date getDatalancto() {
-		return datalancto;
-	}
-	public void setDatalancto(Date datalancto) {
-		this.datalancto = datalancto;
 	}
 	public Double getValorcredito() {
 		return valorcredito;
@@ -74,6 +75,18 @@ public class Lancamento {
 	}
 	public void setDescmotivolancto(String descmotivolancto) {
 		this.descmotivolancto = descmotivolancto;
+	}
+	public int getIdlanctoparcelapai() {
+		return idlanctoparcelapai;
+	}
+	public void setIdlanctoparcelapai(int idlanctoparcelapai) {
+		this.idlanctoparcelapai = idlanctoparcelapai;
+	}
+	public int getParcela() {
+		return parcela;
+	}
+	public void setParcela(int parcela) {
+		this.parcela = parcela;
 	}
 	
 }
